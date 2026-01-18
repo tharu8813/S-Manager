@@ -1,0 +1,65 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    
+    <!-- 단일 파일로 내보내기 -->
+    <PublishSingleFile>true</PublishSingleFile>
+
+    <!-- 트리밍 비활성화 -->
+    <PublishTrimmed>false</PublishTrimmed>
+
+    <!-- 네이티브 라이브러리 포함 (압축 없이) -->
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+
+    <!-- Self-contained 설정 (필요한 .NET 런타임 포함) -->
+    <SelfContained>true</SelfContained>
+    
+    <!-- 대상 플랫폼 (예: win-x64, win-x86, win-arm64 등) -->
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <Title>S Manager</Title>
+    <Version>1.0.0.0</Version>
+    <Authors>Tharu(Ji Beak Min)</Authors>
+    <StartupObject></StartupObject>
+    <AssemblyName>S_Manager</AssemblyName>
+    <SignAssembly>False</SignAssembly>
+    <PackageIcon>로고.png</PackageIcon>
+    <NeutralLanguage>ko-KR</NeutralLanguage>
+    <ApplicationIcon>로고.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="로고.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\로고.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3065.39" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
