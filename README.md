@@ -1,6 +1,10 @@
 ![logo](./로고.ico)
 
 # S Manager
+[![.NET](https://img.shields.io/badge/.NET-8.0-512BD4?logo=dotnet)](https://dotnet.microsoft.com/)
+[![Windows](https://img.shields.io/badge/Platform-Windows-0078D6?logo=windows)](https://www.microsoft.com/windows)
+[![License](https://img.shields.io/badge/License-GPL3.0-green.svg)](LICENSE)
+
 > ㅈ같은 핵쟁이와 학살, 방해로 부터 해방되세요!
 
 ## 사용법
