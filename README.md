@@ -4,6 +4,7 @@
 [![.NET](https://img.shields.io/badge/.NET-8.0-512BD4?logo=dotnet)](https://dotnet.microsoft.com/)
 [![Windows](https://img.shields.io/badge/Platform-Windows-0078D6?logo=windows)](https://www.microsoft.com/windows)
 [![License](https://img.shields.io/badge/License-GPL3.0-green.svg)](LICENSE)
+[![Latest Release](https://img.shields.io/github/v/release/tharu8813/S-Manager?label=Download)](https://github.com/tharu8813/S-Manager/releases/latest)
 
 > ㅈ같은 핵쟁이와 학살, 방해로 부터 해방되세요!
 
